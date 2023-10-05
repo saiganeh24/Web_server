@@ -1,11 +1,8 @@
 # Developing a Simple Webserver
-Name: DEPURU BHARAVA VENKATA SAI GANESH
-
-ID: 23009248
-
-DEPT : AIML
-
-SUB: FUNDAMENTALS OF WEB APPLICATION DEVELOPMENT
+NAME:SAI GANESH DEPURU
+REF NO:23009248
+DEP:AI&ML
+=======
 
 # AIM:
 
@@ -33,9 +30,35 @@ Serving the HTML pages.
 
 Testing the webserver
 # PROGRAM:
-Type your code here
+
+from http.server import HTTPServer,BaseHTTPRequestHandler
+
+content="""
+<html>
+<head>
+<body>
+<h1>Welcome To My Web page</h1>
+</head>
+</body>
+</hmtl>
+"""
+
+class HelloHandler(BaseHTTPRequestHandler):
+    def do_GET(self):
+        self.send_response(200)
+        self.send_header('Content-type','text/html;charset=utf-8')
+        self.end_headers()
+        self.wfile.write(content.encode())
+
+print("Welcome To The Sai Ganesh Webpage")
+server_address=('',80)
+httpd=HTTPServer(server_address,HelloHandler)
+httpd.serve_forever()
+
 # OUTPUT:
+![Alt Text](images/Screenshot%202023-10-05%20094014.png)
 
 # RESULT:
 
 The program is executed succesfully
+
