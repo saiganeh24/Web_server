@@ -37,7 +37,7 @@ content="""
 <html>
 <head>
 <body>
-<h1>Welcome To My Web page</h1>
+<h1> The Top five Web Application Development Frameworks.</h1>
 </head>
 </body>
 </hmtl>
@@ -55,7 +55,7 @@ httpd=HTTPServer(server_address,HelloHandler)
 httpd.serve_forever()
 ```
 # OUTPUT:
-![Alt Text](images/Screenshot%202023-10-05%20094014.png)
+![Alt Text](images/webserver1.png)
 
 # RESULT:
 
