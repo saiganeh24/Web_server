@@ -30,7 +30,7 @@ Serving the HTML pages.
 
 Testing the webserver
 # PROGRAM:
-
+```
 from http.server import HTTPServer,BaseHTTPRequestHandler
 
 content="""
@@ -41,7 +41,6 @@ content="""
 </head>
 </body>
 </hmtl>
-"""
 
 class HelloHandler(BaseHTTPRequestHandler):
     def do_GET(self):
@@ -54,11 +53,11 @@ print("Welcome To The Sai Ganesh Webpage")
 server_address=('',80)
 httpd=HTTPServer(server_address,HelloHandler)
 httpd.serve_forever()
-
+```
 # OUTPUT:
 ![Alt Text](images/Screenshot%202023-10-05%20094014.png)
 
 # RESULT:
 
-The program is executed succesfully
+The program is executed succesfully.
 
