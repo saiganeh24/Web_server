@@ -36,13 +36,17 @@ from http.server import HTTPServer,BaseHTTPRequestHandler
 
 content="""
 <html>
-<head>
 <body>
+<head>
 <h1> The Top five Web Application Development Frameworks.</h1>
-</head>
+<h2>1.Django</h2>
+<h3>2.MEAN Stack</h3>
+<h4>3.React</h4>
+<h5>4.Ruby on Rails
+<h6>5.Angular</h6>
 </body>
-</hmtl>
-
+</head>
+</html>
 class HelloHandler(BaseHTTPRequestHandler):
     def do_GET(self):
         self.send_response(200)
@@ -56,7 +60,7 @@ httpd=HTTPServer(server_address,HelloHandler)
 httpd.serve_forever()
 ```
 # OUTPUT:
-![Alt Text](images/webserver1.png)
+![Alt Text](images/screenshot2.jpg)
 
 # RESULT:
 
